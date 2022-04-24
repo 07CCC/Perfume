@@ -1,0 +1,546 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.container {
+    padding: 0 120px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 40px;
+    margin: 5px 0px;
+    z-index: 9999;
+}
+
+
+
+/*------------------------------------
+--------------  HEADER  --------------
+------------------------------------*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.header-menu {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.header-menu-link {
+    display: block;
+    padding: 5px 0px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header-logo {
+    width: 105px;
+}
+
+
+
+/*------------------------------------
+--------------  BANNER  --------------
+------------------------------------*/
+.banner-wrap {
+    margin-bottom: 30px;
+}
+
+.banner-00 {
+    position: absolute;
+    z-index: 1;
+}
+
+.banner-carrusel-img {
+    width: 100%;
+}
+
+
+
+/*------------------------------------
+---------------  NEWS  ---------------
+------------------------------------*/
+.news-wrap {
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+}
+
+.news-item {
+    border-top: 1px solid #979797;
+    padding: 8px 22px 8px 0px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.news-item-date {
+    width: 100px;
+}
+
+.news-item-type {
+    width: 75px;
+}
+
+.news-item-link {
+    text-decoration: none;
+    color: black;
+    transition: 300ms;
+}
+
+.news-item-link:hover {
+    color: #007B8D;
+}
+
+.news-viewmore {
+    margin-left: auto; 
+    margin-right: 0;
+    width: 136px;
+    height: 30px;
+    border: 1px solid #007B8D;
+    padding: 10px 20px 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 30px;
+    transition: 300ms;
+}
+
+.news-viewmore:hover {
+    background-color: #007B8D;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/*------------------------------------
+-------------  ABOUT US  -------------
+------------------------------------*/
+.aboutus-wrap {
+    background-image: url('../images/back-t1.svg');
+    background-repeat: no-repeat;
+    background-position: 550px 170px;
+    padding-top:40px;
+    padding-bottom: 10px;
+}
+
+.aboutus-text {
+    width: 35vw;
+    font-style: italic;
+}
+
+.aboutus-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 120px;
+    text-align: right;
+    line-height: 60px;
+    margin: 0;
+}
+
+.aboutus-title::first-line {
+    line-height: 50px;
+    color: white;
+    text-shadow: 0 0 1.2px black, 0 0 1.2px black, 0 0 1.2px black, 0 0 1.2px black;
+}
+
+
+
+/*------------------------------------
+-------------  PROFILES  -------------
+------------------------------------*/
+.profiles-banner {
+    width: 100%;
+}
+
+.profiles-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 120px;
+}
+
+.profiles-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+}
+
+.profiles-info {
+    margin: 0;
+}
+
+
+
+/*------------------------------------
+------------  DISCOGRAPHY  -----------
+------------------------------------*/
+.discography-row1-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: left;
+    margin-bottom: 10px;
+}
+
+.discography-row1 {
+    display: flex;
+    gap: 0px;
+}
+
+.discography-cover {
+    width: 345px;
+}
+
+.discography-latest {
+    width: 360px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 130px 0px;
+    background-image: url('../images/back-t3.svg');
+    background-repeat: no-repeat;
+    background-position: -200px 100px;
+}
+
+.discography-latest-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0px;
+}
+
+.discography-latest-type, .discography-latest-name, .discography-latest-date {
+    margin: 0;
+}
+
+.discography-latest-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.discography-release-link {
+    text-decoration: none;
+    color: black;
+}
+
+.discography-row2-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: left;
+}
+
+.discography-row2 {
+    display: flex;
+    gap: 15px;
+}
+
+.discography-viewmore-link {
+    text-decoration: none;
+}
+
+.discography-viewmore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 345px;
+    height: 345px;
+    background-color: #007B8D;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 100px;
+    color: white;
+    transition: 300ms;
+}
+
+.discography-viewmore:hover {
+    background-color: white;
+    color: #007B8D;
+}
+
+.discography-title {
+    text-align: right;
+    position: relative;
+    top: -57px;
+}
+
+
+
+/*------------------------------------
+---------------  LIVES  --------------
+------------------------------------*/
+.lives-wrap {
+    height: 590px;
+    margin-top: 130px;
+}
+
+.lives-title {
+    margin-bottom: 50px;
+}
+
+.carrusel-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 15px;
+}
+
+.carrusel {
+    width: 900px;
+}
+
+.carrusel-img {
+    width: 900px;
+}
+
+.arrow-left {
+    position: relative;
+    left: -936px;
+}
+
+.arrow-left:hover, .arrow-right:hover {
+    cursor: pointer;
+}
+
+
+
+/*------------------------------------
+--------------  VIDEOS  --------------
+------------------------------------*/
+.videos-container {
+    width: 100%;
+    height: 805px;
+    padding: 40px 0px 0px 0px;
+    background-image: url('../images/back-t2.svg');
+    background-repeat: no-repeat;
+    background-position: 850px 100px;
+}
+
+.videos-row1 {
+    padding: 0 120px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0px 30px;
+}
+
+.videos-row2 {
+    padding: 0 120px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0px 30px;
+}
+
+.videos-video-date {
+    margin: 10px 0px 5px 0px;
+}
+
+.videos-video-title {
+    margin: 0px 0px 50px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+}
+
+.videos-thumbnail-img {
+    width: 430px;
+}
+
+.videos-viewmore-link {
+    text-decoration: none;
+}
+
+.videos-viewmore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 430px;
+    height: 242px;
+    background-color: #007B8D;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 100px;
+    color: white;
+    transition: 300ms;
+}
+
+.videos-viewmore:hover {
+    background-color: white;
+    color: #007B8D;
+}
+
+.videos-title {
+    padding: 0px 120px;
+    text-align: right;
+    position: relative;
+    top: -165px;
+}
+
+
+
+/*------------------------------------
+---------------  SHOP  ---------------
+------------------------------------*/
+.shop-title {
+    margin-bottom: 20px;
+}
+
+.shop-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop-link {
+    text-decoration: none;
+    color: black;
+}
+
+.shop-thumbnail-img {
+    width: 355px;
+}
+
+.shop-item-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+}
+
+.shop-item-type {
+    margin: 0px 0px 15px 0px;
+}
+
+.shop-viewmore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px auto 110px auto;
+    width: 204px;
+    height: 20px;
+    border: 1px solid #007B8D;
+    padding: 20px 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 30px;
+    transition: 300ms;
+}
+
+.shop-viewmore:hover {
+    background-color: #007B8D;
+    color: white;
+    cursor: pointer;
+}
+
+.shop-viewmore-link {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/*------------------------------------
+--------------  FOOTER  --------------
+------------------------------------*/
+.footer-style {
+    height: 220px;
+    padding-top: 30px;
+    background-color: #007B8D;
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 17px;
+}
+
+.footer-header {
+    font-weight: 700;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.footer-logo-credit {
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 0px;
+}
+
+.footer-logo {
+    width: 100px;
+}
+
+.footer-copy {
+    color: #adadad;
+}
+
+.footer-navigation {
+    width: 90px;
+}
+
+.footer-links {
+    color: white;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+.footer-links:hover {
+    text-decoration: underline;
+}
+
+.footer-accounts {
+    width: 114px;
+}
+
+.footer-stream {
+    width: 520px;
+}
+
+.icon-accounts-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 6px 10px;
+}
+
+.stream-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 9px 24px;
+}
+
+
+
+/*------------------------------------
+----------------  FIN  ---------------
+------------------------------------*/
